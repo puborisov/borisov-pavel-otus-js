@@ -2,9 +2,8 @@ const add = x => {
     return y => {
         if (typeof y !== "undefined") {
             return add(x + y);
-        } else {
-            return x;
         }
+        return x;
     };
 };
 
